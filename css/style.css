@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai&family=Amiri&family=Aref+Ruqaa:wght@700&family=Gulzar&family=Harmattan&family=IBM+Plex+Sans+Arabic:wght@300&family=Jomhuria&family=Mada:wght@200;300;400&family=Marhey:wght@700&family=Poppins:ital,wght@0,400;1,300&family=Raleway:wght@500&display=swap');
+
+
+*{/* ايش يعني ستار */
+    font-family: 'Mada', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+font-size:99%;
+overflow-x:hidden;
+}
+
+    body{
+background:#EEE0C9;
+overflow: hidden;
+padding-left: 30rem;
+    }
+
+    section{
+min-height:100vh;
+padding:1rem;
+
+    }
+    .btn{/* المربع الي تحت الكلام */
+
+        padding:0.5;
+        margin-right:4rem;
+        background:linear-gradient(50deg,#526D82,#96B6C5);
+        cursor: pointer;
+        color:whitesmoke;
+        font-size:1rem;
+        border-radius:5rem;  
+    }
+    .btn i{
+        padding: 0.5em;
+        font-size: 1rem;
+    }
+    header{
+position:fixed;
+top:0; left:0;
+z-index:1000;
+height:100%;
+width:25rem;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-flow:column;
+text-align:center;
+background-color: #F1F0E8;
+    }
+    header .user img {/* تعديلات على الصورة  ر */
+        height: 10rem;
+        width: 10rem;
+        border-radius:50%;
+        margin:0.5rem;
+        position:center;
+        padding:0.5rem;
+        background-color:#526D82;/* حدود الصورة */
+    }
+
+ header .user .name {
+font-size: 2rem;
+color:#526D82;
+ }
+
+ header .user .post {
+    font-size: 1.6rem;
+    color:#526D82;
+     }
+    header .user .post {
+    font-size: 1.6rem;
+    color:#5a636a;
+     }
+header .navv{
+width:100%;
+}
+header .navv .list-group{
+    list-style:none;
+     padding:1rem 3rem ;
+    }
+
+    header .navv  .list-group li a{
+    display:block;
+    padding:0.6rem;
+    margin: 0.3rem;
+    background:linear-gradient(50deg,#526D82,#96B6C5);
+    color: white;
+    font-size: 1rem;
+    border-radius: 5rem;
+    text-decoration: none;
+    } 
+
+
+
+/* قساسات الشاشهء*/
+@media (max-width:400px) {
+    header{width:100vm;}
+.heading{margin: 0 3rem;}
+.about .row .counter .box{width: 100%;}
+}
+@media only screen and (max-width: 768px) {
+    /* Your CSS for mobile devices goes here */
+  }
+.home{
+    display: flex;
+    justify-content: center;
+  flex-flow:column;
+    padding:2rem;
+}
+.home h3{
+font-size: 2.5rem;
+color: #5a636a;
+
+}
+.home h1{
+    font-size:3rem;
+    color:#5a636a;
+}
+.home p{
+    font-size: 1.5rem;
+    color:#5a636a;
+}
+.home h1 span{ color: #526D82; }
+
+.heading{/* تعديلات ع العنوان ء*/
+text-align: center;
+margin:0 6rem;
+font-size: 4rem;
+padding: 1rem;
+border-bottom: 0.2rem solid #5a636a ;
+color: #526D82;
+}
+
+.about .row{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    color: whitesmoke;
+}
+.about .row .counter{
+    text-align: center;
+    flex: 1 1 48rem;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+    }
+    .about .row .counter .box{
+        text-align: center;
+width: 20rem;
+background: #5a636a;
+margin: 2rem;
+padding:1rem;
+    }
+    .about .row .counter .box span{
+font-size: 2rem;
+color: wheat;
+
+    }
+    .education .boxcont{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+padding: 1rem 0;
+padding-left: 3rem;
+    }
+    .education .boxcont .box{
+width:8rem;
+margin: 1rem 1rem;
+text-align: center;
+border-left:0.5rem solid whitesmoke;
+position: relative;
+padding: 0 2rem;
+    }
+    .education .boxcont .box span{
+font-size: 1.5rem;
+background: #526D82;
+color: whitesmoke;
+border-radius: 5rem;
+padding: 0.5rem 1.5rem;
+    }
+    .education .boxcont .box h3{/* الخطء*/
+
+        font-size: 1.5rem;
+        text-align: center;
+        color: black;
+        padding-top: 1.5rem;
+    }
+    .education .boxcont .box i{
+position: absolute;
+top: -1rem; left: -2.5rem;
+height:4rem ;
+width: 4rem;
+border-radius:50%;
+line-height: 4rem;/* موضع الايقونة ء*/
+text-align: center;
+font-size: 2rem;
+color: white;
+background:linear-gradient(50deg,#526D82,#96B6C5);
+    }
+    .contact .row{
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+margin: 1rem ;
+    }
+    .contact .row .content{
+        flex:1 1 30rem ;
+        padding: 4rem;
+        padding-bottom: 0; 
+    }
+    .contact .row form{
+        flex:1 1 45rem ;
+        padding: 2rem;
+margin: 2rem;  
+margin-bottom: 4rem;  }
+
+.contact .row .box{
+padding:0.5rem;
+margin: 1rem 0;
+background:#5a636a;
+color: white;
+font-size: 1rem;
+width: 100%;
+}
+form button {
+background:#5a636a;
+width: 5rem;
+height: 2rem;
+margin: 1rem;
+color: white;
+
+}
+.contact .row .content .info i{
+color: #526D82;
+padding: 0 1rem ;
+font-size: 4rem ;
+text-align: center;}
+
+.contact .row .content .info i:hover {
+    color: #5a636a;
+  }
+
+footer{
+    width: 100%;
+    text-align: center;}
+
+    form button:hover {
+        background-color: wheat;
+      }
+      

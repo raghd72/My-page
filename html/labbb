@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>lab </title>
+</head>
+<body>
+<h1> welocome to web lab </h1>
+
+<style>
+    hr {
+      border-bottom: 1px solid black;
+    }</style>
+
+</body>
+</html>
